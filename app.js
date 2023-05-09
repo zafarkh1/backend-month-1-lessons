@@ -1,112 +1,44 @@
-// (true && false);  //false
-// (true || false);  //true
-// (!true || !false);  //true
-// (true && !false); //true
-// (!true || 1); //1
-// (!(true && false)); //true
-// ((true && false) || true) //true
-// (100 && -1) //
-// ((true || false) && !true) //false
-// ((true && true && false) || false) //false
-// (1 == true && false == 0) //
-// (true != 0 && false == !-1 ) // true
+//      
+// let func = new Function (
+// 	'arg', `
+// 	{
+// 		return arg
+// 	}`
+// )
 
-// console.log(name);
-// var name = 'Dave'
-// var name = 'Mike'
+// console.log(5);
 
-// const PI = 3.14
+// let btn = document.getElementById("btn")
+// let list = document.getElementById("list")
 
-// function fun(arg) {
-// 	arg = 'hi'
-// 	console.log(arg);
-// }
+// let answers = [
+// 	[22, 67, true],
+// 	[45, 75, false],
+// 	[8, 33, true],
+// 	[32, 1, true],
+// 	[66, 44, false]
+// ]
 
-// fun(PI)
-
-// const arr = [['name', 'John'], ['age', 44], ['gender', 'male']]
-
-// var age = 23
-// let ism = 'Nick'
-// var job = 'Frontend developer'
-// const aim = "Happiness"
-
-// function fun() {
-// 	const player = "leo"
-// }
-
-// if(22) {
-// 	let statue = "Senior Developer"
-// }
-
-// console.log(window);
-
-// const age = {yosh: 22}
-// const age2 = age
-// age2.yosh = 33
-
-// console.log(age2);
-
-// let squad = ['leo', 'robert', ['usman', 'rafinha'], 'pablo']
-// let subs = squad[2]
-// squad[2] = ['ferran']
-// console.log(subs);
-// console.log(squad[2]);
-
-// let obj = {
-// 	name: 'John',
-// 	age: 44,
-// 	gender: 'male'
-// }
-
-// function fun(arg) {
-// 	let array = []
-// 	for (const key in arg) {
-// 		let insideArr = []
-//     let arrFirst = key;
-//     let arrValue = arg[key]
-// 		insideArr.push(key);
-//     insideArr.push(arg[key]);
-// 		array.push(insideArr)
-//   }
-// 	console.log(array);
-// }
-
-// fun(obj)
-
-// const arrPer = [['name', 'john'], ['age', 33], ['status', 'wealthy']]
-
-// const objPer = {
-// 	name: 'john',
-// 	age: 33,
-// 	status: 'wealthy'
-// }
-
-// console.log(Object.entries(objPer))
-
-// function convert(arg) {
-// 	let arr = []
-// 	for (const key in arg) {
-// 		let insideArr = []
-// 		insideArr.push(key)
-// 		insideArr.push(arg[key])
-// 		arr.push(insideArr)
+// btn.onclick = () => {
+// 	let func = new Function("arg1", 'arg2', textarea.value);
+// 	list.innerHTML = ''
+// 	for(let i of answers) {
+// 		let li = document.createElement("li")
+// 		li.textContent = func(i[0], i[1]) === i[2];
+// 		list.append(li)
 // 	}
-// 	console.log(arr);
-// 	return arr
 // }
 
-// convert(objPer)
+//                                            d
 
-// function myFun (arg) {
-// 	let obj = {}
-// 	for (let index of arg) {
-// 		let key = index[0]
-// 		let value = index[1]
-// 		obj[key] = value
+// function Func(name) {
+// 	if(!new.target) return new Func(name)
+// 	this.call = name;
+// 	this.info = () => {
+// 		return this.call
 // 	}
-// 	console.log(obj);
-// 	return obj
+// 	return
 // }
 
-// myFun(arrPer)
+// let func = new Func('hello')
+// console.log(func);
