@@ -1,112 +1,63 @@
-// (true && false);  //false
-// (true || false);  //true
-// (!true || !false);  //true
-// (true && !false); //true
-// (!true || 1); //1
-// (!(true && false)); //true
-// ((true && false) || true) //true
-// (100 && -1) //
-// ((true || false) && !true) //false
-// ((true && true && false) || false) //false
-// (1 == true && false == 0) //
-// (true != 0 && false == !-1 ) // true
-
-// console.log(name);
-// var name = 'Dave'
-// var name = 'Mike'
-
-// const PI = 3.14
-
-// function fun(arg) {
-// 	arg = 'hi'
-// 	console.log(arg);
+//                 Call Apply Bind
+// let p1 = {
+// 	name: 'White',
+// 	age: 33
 // }
 
-// fun(PI)
-
-// const arr = [['name', 'John'], ['age', 44], ['gender', 'male']]
-
-// var age = 23
-// let ism = 'Nick'
-// var job = 'Frontend developer'
-// const aim = "Happiness"
-
-// function fun() {
-// 	const player = "leo"
+// let p2 = {
+//   name: "Black",
+//   age: 44,
+// 	cut(arg1, arg2) {
+// 	return this.name + arg1 + ' Kill you' + arg2;
 // }
+// };
 
-// if(22) {
-// 	let statue = "Senior Developer"
-// }
+// console.log(p2.cut.bind(p1, " I will", " tomorrow")());
 
-// console.log(window);
+let person1 = {
+  name: "Sarvar",
+  car: {
+    type: "Gentra",
+    price: 15000,
+  },
+  money: 5000,
+};
 
-// const age = {yosh: 22}
-// const age2 = age
-// age2.yosh = 33
+let person2 = {
+  name: "A'zam",
+  car: null,
+  money: 15000,
+};
 
-// console.log(age2);
+let person3 = {
+  name: "Umid",
+  car: {
+    type: "Matiz",
+    price: 5000,
+  },
+  money: 10000,
+};
 
-// let squad = ['leo', 'robert', ['usman', 'rafinha'], 'pablo']
-// let subs = squad[2]
-// squad[2] = ['ferran']
-// console.log(subs);
-// console.log(squad[2]);
+function sell(buyer) {
+  if (this.car) {
+    if (buyer.money >= this.car.price) {
+      this.car = buyer.car;
+      this.money += this.car.price;
+      buyer.money -= this.car.price;
+      this.car = null;
+    } else {
+			console.log("Don't have enough money");
+		}
+  } else {
+		console.log("Don't lie");
+	}
+}
 
-// let obj = {
-// 	name: 'John',
-// 	age: 44,
-// 	gender: 'male'
-// }
-
-// function fun(arg) {
-// 	let array = []
-// 	for (const key in arg) {
-// 		let insideArr = []
-//     let arrFirst = key;
-//     let arrValue = arg[key]
-// 		insideArr.push(key);
-//     insideArr.push(arg[key]);
-// 		array.push(insideArr)
-//   }
-// 	console.log(array);
-// }
-
-// fun(obj)
-
-// const arrPer = [['name', 'john'], ['age', 33], ['status', 'wealthy']]
-
-// const objPer = {
-// 	name: 'john',
-// 	age: 33,
-// 	status: 'wealthy'
-// }
-
-// console.log(Object.entries(objPer))
-
-// function convert(arg) {
-// 	let arr = []
-// 	for (const key in arg) {
-// 		let insideArr = []
-// 		insideArr.push(key)
-// 		insideArr.push(arg[key])
-// 		arr.push(insideArr)
-// 	}
-// 	console.log(arr);
-// 	return arr
-// }
-
-// convert(objPer)
-
-// function myFun (arg) {
-// 	let obj = {}
-// 	for (let index of arg) {
-// 		let key = index[0]
-// 		let value = index[1]
-// 		obj[key] = value
-// 	}
-// 	console.log(obj);
-// 	return obj
-// }
-
-// myFun(arrPer)
+console.log(person1);
+console.log(person2);
+console.log(person3);
+console.log("========================================");
+sell.apply(person3, [person2]);
+console.log(person1);
+console.log(person2);
+console.log(person3);
