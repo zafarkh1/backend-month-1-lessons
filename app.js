@@ -1,35 +1,14 @@
-// function fn () {
-// 	this.name = 'Eshmat';
-// 	const obj = {
-// 		name: 'Toshmat',
-// 		fn1() {
-// 			return this.name
-// 		},
-// 		fn2: function() {
-// 			return this.name
-// 		},
-// 		fn3: () => {
-// 			return this.name
-// 		}
-// 	}
-// 		return obj;
+//                             task-1
+// const fruits = ['olma', 'anor', 'gilos'] // ['Gilos', 'Anor', 'Olma']
+// for(let i in fruits) {
+// 	console.log((fruits[i][0].toUpperCase() + fruits[i].slice(1)));
 // }
 
-// console.log(fn().fn1());
-// console.log(fn().fn2());
-// console.log(fn().fn3());
+//                             task-2
+// const fruits = ['olma', 'uzum', 'gilos', 'banan', 'uzum', 'gilos', 'olma']
 
-// function fn(a, b) {
-// 	console.log(a, b);
+// function removeDuplicate(arr) {
+// 	return arr.filter((item, index) => arr.indexOf(item) === index)
 // }
 
-// const arr = [2,5,7]
-
-// fn(...arr)
-
-// function fn (arr) {
-// 	console.log(...arr);
-// }
-// const arr2 = [3,6,7]
-
-// fn(arr2)
+// console.log(removeDuplicate(fruits));
