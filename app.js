@@ -12,3 +12,12 @@
 // }
 
 // console.log(removeDuplicate(fruits));
+
+let name = 'Eshmat'
+function fn() {
+	name = 'Toshmat'
+	console.log(name, 'inside');
+}
+
+console.log(name, 'outside');
+fn()
