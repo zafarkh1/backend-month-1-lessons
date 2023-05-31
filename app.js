@@ -1,23 +1,19 @@
-//                             task-1
-// const fruits = ['olma', 'anor', 'gilos'] // ['Gilos', 'Anor', 'Olma']
-// for(let i in fruits) {
-// 	console.log((fruits[i][0].toUpperCase() + fruits[i].slice(1)));
-// }
+class CustomArray {
+  constructor(array) {
+    this.array = array;
+  }
 
-//                             task-2
-// const fruits = ['olma', 'uzum', 'gilos', 'banan', 'uzum', 'gilos', 'olma']
+  reverse() {
+		const result = []
+		for (let i=0; i<this.array.length;i--) {
+			console.log(i);
+		}
+		console.log(this.array);
+	}
 
-// function removeDuplicate(arr) {
-// 	return arr.filter((item, index) => arr.indexOf(item) === index)
-// }
+  sort() {}
 
-// console.log(removeDuplicate(fruits));
-
-let name = 'Eshmat'
-function fn() {
-	name = 'Toshmat'
-	console.log(name, 'inside');
+  filter() {}
 }
 
-console.log(name, 'outside');
-fn()
+const arrayResult = new CustomArray([1, 2, 3, 4, 5, 6, "John", false, -1, ""]);
