@@ -1,44 +1,48 @@
-//      
-// let func = new Function (
-// 	'arg', `
-// 	{
-// 		return arg
-// 	}`
-// )
-
-// console.log(5);
-
-// let btn = document.getElementById("btn")
-// let list = document.getElementById("list")
-
-// let answers = [
-// 	[22, 67, true],
-// 	[45, 75, false],
-// 	[8, 33, true],
-// 	[32, 1, true],
-// 	[66, 44, false]
-// ]
-
-// btn.onclick = () => {
-// 	let func = new Function("arg1", 'arg2', textarea.value);
-// 	list.innerHTML = ''
-// 	for(let i of answers) {
-// 		let li = document.createElement("li")
-// 		li.textContent = func(i[0], i[1]) === i[2];
-// 		list.append(li)
+// class ParseBoolean {
+// 	constructor ({value, exception}) {
+// 		this.value = value
+// 		this.exception = exception ? exception : new Error ("Something went wrong while parsing into Boolean literal")
 // 	}
 // }
 
-//                                            d
-
-// function Func(name) {
-// 	if(!new.target) return new Func(name)
-// 	this.call = name;
-// 	this.info = () => {
-// 		return this.call
+// class CustomProductModule extends ParseBoolean {
+// 	constructor () {
+// 		super ({
+// 			value: 'Custom exception',
+// 			exception: new Error ("Custom exception in product module")
+// 		})
 // 	}
-// 	return
 // }
 
-// let func = new Func('hello')
-// console.log(func);
+// class CustomUserModule extends ParseBoolean {
+//   constructor() {
+//     super({
+//       value: "Custom exception",
+//       exception: new Error("Custom exception in user module"),
+//     });
+//   }
+// }
+
+// class Person {
+//   constructor(name, country) {
+//     this.name = name;
+//     this.country = country;
+//   }
+// }
+
+// class Male extends Person {
+//   constructor(name, country, gender) {
+//     super(name, country);
+//     this.gender = "male";
+//   }
+// }
+
+// console.log(new Male('Zafar', 'Uzbekistan'));
+
+/* let result = Number.MAX_SAFE_INTEGER
+result = Number.MAX_VALUE
+result = Number.MIN_SAFE_INTEGER
+result = Number.NEGATIVE_INFINITY
+result = Number.MIN_VALUE
+result = Number.POSITIVE_INFINITY
+console.log(result); */
