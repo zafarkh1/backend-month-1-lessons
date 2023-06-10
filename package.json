@@ -1,0 +1,13 @@
+{
+  "name": "lesson1",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "data.js",
+  "scripts": {
+    "start:watch": "node --watch server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
