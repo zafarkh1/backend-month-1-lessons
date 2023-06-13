@@ -2,10 +2,10 @@
   "name": "lesson1",
   "version": "1.0.0",
   "description": "",
-  "type": "module",
-  "main": "data.js",
+	"type": "module",
+  "main": "test.js",
   "scripts": {
-    "start:watch": "node --watch server.js"
+		"start:watch": "node --watch ./test.js"
   },
   "keywords": [],
   "author": "",
