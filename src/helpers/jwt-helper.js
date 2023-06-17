@@ -1,9 +1,4 @@
-const jwt = require('jsonwebtoken')
+import jwt from "jsonwebtoken";
 
-const sign = (payload) => jwt.sign(payload, "2k4kj5bn7");
-const verify = (token) => jwt.verify(token, "2k4kj5bn7");
-
-module.exports = {
-	sign,
-	verify
-}
+export const sign = (payload) => jwt.sign(payload, "!Q@W#E$R");
+export const verify = (token) => jwt.verify(token, "!Q@W#E$R");
