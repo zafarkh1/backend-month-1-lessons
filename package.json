@@ -1,17 +1,15 @@
 {
-  "dependencies": {
-    "jsonwebtoken": "^9.0.0"
-  },
   "name": "lesson1",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
-	"type": "module",
-  "devDependencies": {},
   "scripts": {
-    "start:watch": "node --watch ./src/server.js"
+		"start:watch": "node --watch ./src/server.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": ""
+  "dependencies": {
+    "jsonwebtoken": "^9.0.0"
+  }
 }
