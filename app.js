@@ -9,9 +9,8 @@
 // authentication vs authorization node js
 //1chi qism - algoritm , 2 - payload (id), 3 - secret
 // randomBytes
+// npm i jsonwebtoken (sign verify)
+// npm i dotenv (config)
 
-// const { log } = require('console');
-// const accessToken = sign ({id : 1}, '!QER#LJNF')
-
-// console.log(verify(accessToken, "!QER#LJNF"));
-// const { sign, verify } = require("jsonwebtoken");
+//                     lesson-1
+// npm i express
