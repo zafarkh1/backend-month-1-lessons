@@ -14,3 +14,5 @@
 
 //                     lesson-1
 // npm i express
+// app.use(express.json()) => node.js dagi req.on(chunk) va JSON parse ogirish jarayonini bajarib beradi
+// /books/:id => patch da id berish
