@@ -5,7 +5,7 @@
 // fs.mkdirSync('./test', { recursive : true}) => yangi folder ochib beradi
 
 
-//                     lesson-10
+	//                     lesson-10
 // authentication vs authorization node js
 //1chi qism - algoritm , 2 - payload (id), 3 - secret
 // randomBytes
