@@ -4,8 +4,7 @@
 // fs.unlinkSync(path) => fileni o'chirib yuboradi
 // fs.mkdirSync('./test', { recursive : true}) => yangi folder ochib beradi
 
-
-	//                     lesson-10
+//                     lesson-10
 // authentication vs authorization node js
 //1chi qism - algoritm , 2 - payload (id), 3 - secret
 // randomBytes
@@ -26,7 +25,7 @@
 
 // 1)                 BUILT-IN MIDDLEWARE
 
-// Ishlatilishi => 
+// Ishlatilishi =>
 // 1) routing va request handler o'rtasida => (express.json())
 // 2) global holatda () => app.use(express.json())
 
@@ -58,3 +57,10 @@
 //     details: `${req.url.split("/")[1]} not found`,
 //   });
 // });
+
+//                          lesson-3
+//                 JOI (package for validation)
+// npm i joi
+
+//                          lesson-4
+//pnpm update (pnpm ancha tezroq) => {yarn, npm , pnpm, npx, pnpx}
