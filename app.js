@@ -64,3 +64,9 @@
 
 //                          lesson-4
 //pnpm update (pnpm ancha tezroq) => {yarn, npm , pnpm, npx, pnpx}
+
+//model => schema => controller => middlewares
+
+//                           ROUTER MIDDLEWARE
+// const router = express.Router()
+// router.post('/smth', ....)
