@@ -71,7 +71,6 @@
 // const router = express.Router()
 // router.post('/smth', ....)
 
-
 //                           lesson-5
 
 //                      PRESENTATION TIER (client)
@@ -99,4 +98,17 @@
 // A template engine is a specific kind of template processing module that exhibits all of the major features of a modern programming language. The term template engine evolved as a generalized description of programming languages whose primary or exclusive purpose was to process templates and data to output text.
 // Serverda template ni render qilib beradi
 
-// EJS => template engine, reactga o'xshab ketadi, biron bir HTML formatdagi faylni render qilib beradi
+// View Engine => templte engine, shablonni render qiladi
+
+// EJS => template engine, reactga o'xshab ketadi, biron bir HTML formatdagi faylni render qilib beradi. Butun boshli saytni, frontend va backend qismini bittada yozish imkonini beradi
+
+// res.render("book"); => .ejs ko'rinishda yozish uchun
+
+// app.set('view engine', 'ejs')
+// app.set('views', join(process.cwd(), 'src', 'view')) => manda view degan papka ichida joylashgan book.ejs faylim
+
+// app.use => middleware lar uchun
+// app.set => sozlash uchun
+
+// <%  %> => JS syntaksis yozilganda (map, forEach)
+// <%=  %> => render qilinadigan (e.price, e.title)
