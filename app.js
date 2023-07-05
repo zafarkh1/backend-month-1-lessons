@@ -70,3 +70,27 @@
 //                           ROUTER MIDDLEWARE
 // const router = express.Router()
 // router.post('/smth', ....)
+
+
+//                           lesson-5
+
+//                      PRESENTATION TIER (client)
+// The presentation tier is the user interface and communication layer of the application, where the end user interacts with the application (UI qismi, ya'ni frontend) {tier => qism}
+
+//                      LOGIC TIER (server)
+// The application tier, also known as the logic tier or middle tier, is the heart of the application. (backend qismi) {API}
+
+//                       DATA TIER (database)
+// The data tier, sometimes called database tier, data access tier or back-end, is where the information processed by the application is stored and managed.(baza qismi)
+
+//                        THREE TIER APPLICATION
+// A 3-tier application architecture is a client-server implementation that uses a presentation tier, application tier and data tier to organize app design.
+
+//                         TWO TIER APPLICATION
+// A two-tier application involves a client and a server. The client contains the user interface with the business logic in one machine. Meanwhile, the backend server includes the database running on a different machine
+
+//                         ONE TIER APPLICATION
+// SSR – (анг. аббревиатура от Server Side Rendering) это технология, которая позволяет, с помощью Node.js, запускать JavaScript код на сервере (а не в браузере как обычно) и готовый результат отправлять пользователю, избегая лишней нагрузки на его браузер и компьютер.
+
+//                         MVC
+// The Model-View-Controller (MVC) is an architectural pattern that separates an application into three main logical components: the model, the view, and the controller.
