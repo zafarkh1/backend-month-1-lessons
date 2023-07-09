@@ -140,3 +140,13 @@
 // })
 
 // const upload = multer({storage})
+
+//                   randomUUID
+//import { randomUUID } from "crypto";
+// cb(null, randomUUID() + `.${file.mimetype.split("/")[1]}`);
+
+// => bu package bizaga random tarzda id tanlab beradi hech qachon takrorlanmaydigan
+
+// '' => single quote
+// "" => double quotes
+// `` => backtick quotes
