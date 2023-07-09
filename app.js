@@ -112,3 +112,31 @@
 
 // <%  %> => JS syntaksis yozilganda (map, forEach)
 // <%=  %> => render qilinadigan (e.price, e.title)
+
+// app.use(express.urlencoded()) => (middleware) form dan junatilganda ishlatiladi
+
+// res.redirect('/api/books') => pageni qayta o'qimasdan qilib yubormasdan shunchaki refresh qiladi
+
+// app.use('/assets', express.static(join(process.cwd(), 'src', 'assets')))  => css ulash usuli
+
+//                    lesson-6
+
+/* <form action="/file-upload" enctype="multipart/form-data" method="POST">
+	<input type="file" name="file">
+		<button type="submit">Upload</button>
+</form>; */
+
+// multipart/form-data => file junatish usuli
+
+// npm i multer
+
+//  const storage = multer.diskStorage({
+//   destination: function (req, file, cb) {
+//     cb(null, "./src/uploads");
+//   },
+//   filename: function (req, file, cb) {
+//     cb(null, file.originalname)
+//   },
+// })
+
+// const upload = multer({storage})
