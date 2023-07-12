@@ -150,3 +150,8 @@
 // '' => single quote
 // "" => double quotes
 // `` => backtick quotes
+
+//                      lesson-7
+
+// Local storage => doimiy saqlanib turuvchi xotira
+// Session storage => vaqtinchalik saqlanib turuvchi xotira
