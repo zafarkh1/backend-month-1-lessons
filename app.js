@@ -155,3 +155,62 @@
 
 // Local storage => doimiy saqlanib turuvchi xotira
 // Session storage => vaqtinchalik saqlanib turuvchi xotira
+
+//                      lesson-8
+
+//           TELEGRAM BOT
+// npm i node-telegram-bot-api
+
+// bot father
+// Use this token to access the HTTP API:
+// 6329393714:AAEowDEcbT_XePVqPqVLnB7r6C5EotnrZ98 => bizaga token beradi tg bot
+
+// bot.onText(/\/start/, message => {
+// 	bot.sendMessage(message.chat.id, `Hello ${message.from.first_name} Choose`, {
+	// reply_markup: {
+//       keyboard: [
+//         [
+//           {
+//             text: "Ozbek",
+//           }
+//         ],
+// });
+// })
+
+
+
+// bot.on("message", (message) => {
+//   const chatId = message.chat.id;
+
+//   if (message.text == "Ozbek") {
+//     bot.sendMessage(
+//       chatId,
+//       `My School Hush Kelibsiz`
+//     )}})
+
+
+// bot.sendPhoto(
+//       chatId,
+//       "https://cambridgeonline.uz/img/background/Novza.jpg",
+//       {
+//         caption: `<i>📍 My School Drujba filiali xaritasi </i>`,
+// 				parse_mode: "HTML",
+// 				reply_markup: {
+// 					inline_keyboard: [
+// 						[
+// 							{
+// 								text: "Drujba",
+// 								callback_data: "Drujba"
+// 							}
+// 						]
+// 					]
+// 				}
+//       }
+//     );
+
+// bot.on('callback_query') => callback_data ichidagi value bn bir xil
+// bot.on('contact')
+
+//new_chat_members => bot guruxga ulangandan keyin, guruxga yamgi a'zo qo'shilsa habar beradi
+// one_time_keyboard: true,
+// request_contact: true;
